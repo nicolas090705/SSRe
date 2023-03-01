@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: black;
+            background-size: cover;
+            height: 100vh;
+            --def: #6fbede;
+            --inv: rgb(95, 220, 222);
+        }
+        h1 {
+            height: 300;
+            border: 1px solid rgb(141, 138, 138);
+            text-emphasis-color: rgb(255, 255, 255);
+           }
+           
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reingenieria </title>
+     <!-- Impxort Google Icon Font -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         
+</head>
+<body>
+    <div class="row section">
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l3">
+            <h5 class="white-text">COSTO REINGENIERIA</h5>
+        
+            <label for="P6">Valor empresarial de la reingenieria:</label>
+            <input type="number" name="P6" id="P6" class="white-text"><br>
+            
+            <label for="P4">Costo de mantenimiento despues de reingenieria</label>
+            <input type="number" name="P4" id="P4" class="white-text"><br>
+        
+            <label for="P5">Costo de operacion despues de reingenieria:</label>
+            <input type="number" name="P5" id="P5" class="white-text"><br>
+            
+            <label for="L">Vida esperada del sistema</label>
+            <input type="number" name="L" id="L" class="white-text"><br>
+        
+            <label for="P8">Tiempo estimado de la reingenieria:</label>
+            <input type="number" name="P8" id="P8" class="white-text"><br>
+            
+            <label for="P7">Costo de proyecto de la reingenieria</label>
+            <input type="number" name="P7" id="P7" class="white-text"><br>
+            
+            <label for="">Factor de riesgo de la reingenieria = 1</label>
+    
+        </div>
+        <div class="col s12 m12 l2"></div>
+    
+        <div class="col s12 m12 l3">
+            <h5 class="white-text">COSTO DE MANTENIMIENTO</h5>
+        
+            <label for="P3">Valor empresarial actual de una aplicacion(anual)</label>
+            <input type="number" name="P3" id="P3" class="white-text"><br>
+            
+            <label for="P1">Costo de mantenimiento actual</label>
+            <input type="number" name="P1" id="P1" class="white-text"><br>
+        
+            <label for="P2">Costo de operacion actual</label>
+            <input type="number" name="P2" id="P2" class="white-text"><br>
+            <button type="submit" onclick="calcular();" >Enviar</button>
+            <br><br>
+
+            <p class="white-text" id="costo_mantenimiento"></p>
+            <p class="white-text" id="costo_reingenieria"></p>
+            <p class="white-text" id="costo_beneficio"></p>
+        </div>
+        <div class="col s12 m12 l2"></div>
+
+    </div>
+    <script src="/calcular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    
+</body>
+</html>
